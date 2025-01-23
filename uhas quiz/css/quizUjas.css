@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+    
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", serif;
+  background-image: url('https://prime-event.com.ua/wp-content/webp-express/webp-images/uploads/2020/08/Kviz.jpg.webp');
+  background-size: cover;
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-top: 100px;
+  background-color: rgb(161, 103, 243);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  width: 600px;
+}
+
+button {
+  background-color: rgb(91, 228, 112);
+  margin-top: 10px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgb(84, 185, 84);
+}
+
+.hidden {
+  display: none;
+}
+
+.timer {
+  font-size: 24px;
+  margin-bottom: 20px;
+}

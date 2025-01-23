@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/quizUjas.css">
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <h1>Quiz</h1>
+    
+        <div class="timer" id="timer">Время: <span id="time">52</span> секунд</div>
+        <div id="quiz-container">
+    
+          <div class="question">
+            <p>Вопрос 1: Сколько лет живут собачки?</p>
+            <input type="radio" value="1"> 16 лет<br>
+            <input type="radio" value="0"> 14 лет<br>
+            <input type="radio" value="0"> 1 годик<br>
+          </div>
+    
+          <div class="question hidden">
+            <p>Вопрос 2: Столица Казахстана?</p>
+            <input type="radio" value="0"> Алматы<br>
+            <input type="radio" value="1"> Астана<br>
+            <input type="radio" value="0"> Мухосранск<br>
+          </div>
+    
+          <div class="question hidden">
+            <p>Вопрос 3: Нынешний президент США?</p>
+            <input type="radio" value="1"> Трамп<br>
+            <input type="radio" value="0"> Байден<br>
+            <input type="radio" value="0"> Обама<br>
+          </div>
+    
+          <div class="question hidden">
+            <p>Вопрос 4: Любишь бананы?</p>
+            <input type="radio" value="1"> Да<br>
+            <input type="radio" value="0"> Нет<br>
+            <input type="radio" value="0"> Конечно же нет<br>
+          </div>
+    
+          <div class="question hidden">
+            <p>Вопрос 5: Кто создатели этого квиза?</p>
+            <input type="radio" value="1"> Kirieshki company<br>
+            <input type="radio" value="0"> Ilon mask<br>
+            <input type="radio" value="0"> TSBC<br>
+          </div>
+    
+          <button id="next-button" onclick="nextQuestion()">Следующий вопрос</button>
+          <button id="submit-button" class="hidden" onclick="submitQuiz()">Отправить ответы</button>
+        </div>
+    
+        <div id="result" class="hidden">
+          <p>Ваш результат: <span id="score">0</span> из 5</p>
+          <button onclick="restartQuiz()">Попробовать снова</button>
+        </div>
+    
+      </div>
+
+    <script src="../js/quiz.js"></script>
+</body>
+</html>
